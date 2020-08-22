@@ -7,7 +7,7 @@ export default class Introduction extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-4 col-5-large col-12-medium">
-                        <span className="image fit"><img src="/images/Tanushree.jpg" alt="" /></span>
+                        <span className="image fit"><img src="images/Tanushree.jpg" alt="" /></span>
                     </div>
                     <div className="col-8 col-7-large col-12-medium">
                         <header>
