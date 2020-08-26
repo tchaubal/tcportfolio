@@ -7,7 +7,7 @@ export default class WorkDone extends Component {
             <div className="container">
                 <header>
                     <h2>Technical Skill Set</h2>
-                    <p>A summary of knowledge acquired over 7 years in the software industry!</p>
+                    <p>A summary of knowledge acquired over 6 years in the software industry!</p>
                 </header>
                 <div className="row aln-center">
                     <div className="col-4 col-6-medium col-12-small">
