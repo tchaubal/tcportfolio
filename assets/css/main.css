@@ -2461,8 +2461,10 @@ input, select, textarea {
 	}
 }
 
-.intro-buttons {
-	flex-direction: row;
-    justify-content: space-between;
-    display: flex;
+@media screen and (min-width: 737px) {
+	.intro-buttons {
+		flex-direction: row;
+		justify-content: space-between;
+		display: flex;
+	}
 }
