@@ -13,6 +13,7 @@ export default class ContactMe extends Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleReset = this.handleReset.bind(this);
     }
 
     handleSubmit(e) {
@@ -38,6 +39,16 @@ export default class ContactMe extends Component {
         this.setState({
             [e.target.name]: e.target.value
         })
+    }
+
+    handleReset(e) {
+        console.log("In handle reset...")
+        this.setState({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
     }
 
     render() {
@@ -80,7 +91,7 @@ export default class ContactMe extends Component {
                                 <div className="col-12">
                                     <ul className="actions">
                                         <li><input type="button" value="Send Message" onClick={this.handleSubmit.bind(this)}/></li>
-                                        <li><input type="reset" value="Clear Form" className="alt" /></li>
+                                        <li><input type="reset" value="Clear Form" className="alt" onClick={this.handleReset.bind(this)} /></li>
                                     </ul>
                                 </div>
                             </div>
